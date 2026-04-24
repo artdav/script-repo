@@ -11,7 +11,7 @@ POSTGRES_PASSWORD="${POSTGRES_PASSWORD:-changeme}"
 
 # Packages
 zypper -n ref
-zypper -n in wget gpg2 rpm ca-certificates
+zypper -n in wget gpg2 ca-certificates
 
 # Dirs
 install -d -m 0755 /etc/telegraf/telegraf.d
