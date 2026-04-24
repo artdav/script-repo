@@ -24,7 +24,7 @@ POSTGRES_PASSWORD="${POSTGRES_PASSWORD:-changeme}"
 echo "[INFO] zypper refresh"
 zypper -n ref
 echo "[INFO] zypper install packages"
-zypper -n in wget gpg2 ca-certificates rpm
+zypper -n in wget gpg2 ca-certificates
 
 # Dirs
 echo "[INFO] create /etc/telegraf/telegraf.d"
