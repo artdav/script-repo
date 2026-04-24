@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-: "${TELEGRAF_VERSION:?TELEGRAF_VERSION not set}"
-: "${REGION:?REGION not set}"
+# Defaults (kannst du anpassen)
+TELEGRAF_VERSION="${TELEGRAF_VERSION:-1.30.3}"
+REGION="${REGION:-westeurope}"
+
+# Weiterhin required:
 : "${POSTGRES_USER:?POSTGRES_USER not set}"
 : "${POSTGRES_DB:?POSTGRES_DB not set}"
 : "${POSTGRES_PASSWORD:?POSTGRES_PASSWORD not set}"
