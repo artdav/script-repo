@@ -61,6 +61,11 @@ cat > /etc/telegraf/telegraf.conf <<EOF
   interval = "10s"
   fieldinclude = ["running"]
   name_override = "postgres_service"
+
+[[inputs.exec]]
+  commands = ["/usr/local/bin/pg_log_counts.sh"]
+  timeout = "5s"
+  data_format = "influx"
 EOF
 chmod 0644 /etc/telegraf/telegraf.conf
 
