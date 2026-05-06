@@ -21,10 +21,10 @@ POSTGRES_DB="${POSTGRES_DB:-postgres}"
 POSTGRES_PASSWORD="${POSTGRES_PASSWORD:-changeme}"
 
 # Packages
-echo "[INFO] zypper refresh"
-zypper -n ref
-echo "[INFO] zypper install packages"
-zypper -n in wget gpg2 ca-certificates
+#echo "[INFO] zypper refresh"
+#zypper -n ref
+#echo "[INFO] zypper install packages"
+#zypper -n in wget gpg2 ca-certificates
 
 # Dirs
 echo "[INFO] create /etc/telegraf/telegraf.d"
