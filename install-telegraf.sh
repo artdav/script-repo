@@ -70,12 +70,12 @@ EOF
 chmod 0644 /etc/telegraf/telegraf.conf
 
 # PostgreSQL input config
-echo "[INFO] write /etc/telegraf/telegraf.d/postgresql.conf"
-cat > /etc/telegraf/telegraf.d/postgresql.conf <<EOF
-[[inputs.postgresql]]
-  address = "host=localhost user=${POSTGRES_USER} database=${POSTGRES_DB} password=${POSTGRES_PASSWORD} sslmode=disable"
-EOF
-chmod 0644 /etc/telegraf/telegraf.d/postgresql.conf
+#echo "[INFO] write /etc/telegraf/telegraf.d/postgresql.conf"
+#cat > /etc/telegraf/telegraf.d/postgresql.conf <<EOF
+#[[inputs.postgresql]]
+#  address = "host=localhost user=${POSTGRES_USER} database=${POSTGRES_DB} password=${POSTGRES_PASSWORD} sslmode=disable"
+#EOF
+#chmod 0644 /etc/telegraf/telegraf.d/postgresql.conf
 
 # Install telegraf RPM
 rpm_file="/tmp/telegraf.rpm"
